@@ -6,6 +6,7 @@
 package cezarapi;
 import cezar.leigos.math.OddOrEven;
 import cezar.leigos.string.CharCount;
+import cezar.leigos.math.Calc;
 
 /**
  *
@@ -18,11 +19,15 @@ public class CezarApi {
      */
     public static void main(String[] args) {
         
-        OddOrEven impar = new OddOrEven();
-        CharCount conta = new CharCount();
+        
+        Calc c = new Calc();
         
         
-        System.out.println(conta.CountElement("paulo cezar maciel de souza",'e'));
+        
+        
+        System.out.println(c.FullDecrement(2,10));
+        
+        System.out.println(c.FullIncrement(2,10));
         
     }
     
