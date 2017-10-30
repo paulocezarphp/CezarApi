@@ -23,11 +23,11 @@ public class CezarApi {
         Calc c = new Calc();
         
         
-        
-        
-        System.out.println(c.FullDecrement(2,10));
-        
-        System.out.println(c.FullIncrement(2,10));
+       System.out.println(c.Permutation(10));
+       System.out.println(c.Combination(3, 10));
+       System.out.println(c.Combination(4, 7));
+       System.out.println(c.Arrangement(6, 12));
+       
         
     }
     

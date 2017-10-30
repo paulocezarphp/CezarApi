@@ -17,6 +17,8 @@ public class CharCount {
     
     
     //Essa função verifica quantas vezes um determinado caracteres se repete
+    //Ele espera receber no primeiro parâmetro uma string que queremos analisar
+    //No segundo parâmetro analisamos um char contendo a letra que queremos contar
     public int CountElement(String s,char c){
         this.stringElement = s;
         this.charElement = c;

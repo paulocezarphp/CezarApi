@@ -28,7 +28,7 @@ public class Calc {
     }
     
     
-    //Essa função decrementa um determinado numero(a) 
+    //Esse metodo decrementa um determinado numero(a) 
     //durante uma quantidade(b) vezes
      public int FullDecrement(int a, int b){
     
@@ -41,7 +41,39 @@ public class Calc {
         return total;
     }
     
+     
+    // Esse metodo calcula a permutação de um determinado valor(a)
+    // Ele espera um valor inteiro 
+    public int Permutation(int a){
+                    
+        for(int i = a - 1; i > 1; i--){
+            
+            a = a * i;
+            
+        }
+        
+        return a;
+    }
     
+    public int Combination(int p, int n){
+       
+        int c1 = Permutation(n);        
+        int c2 = Permutation(p) * Permutation(n - p);
+        int total = c1 / c2;       
+        
+        return total;
+    }
+    
+    
+    public int Arrangement(int p, int n){
+    
+        int a1 = Permutation(n);
+        int a2 = Permutation(n - p);
+        int total = a1 / a2;
+        
+        return total;
+    }
+
     
     
 }
