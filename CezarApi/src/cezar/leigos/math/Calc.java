@@ -14,8 +14,14 @@ public class Calc {
     
     private int total;
     
-    //Essa função incrementa um determinado numero(a) 
-    //durante uma quantidade(b) vezes
+    
+    /**
+     * @param a espera um valor inteiro
+     * @param b espera um valor inteiro
+     * Esse Método incrementa uma determinado valor(a)
+     * em uma quantida(b) vezes
+     * @return int    
+     */
     public int FullIncrement(int a, int b){
     
         for(int i = 0; i < b; i++){
@@ -28,8 +34,13 @@ public class Calc {
     }
     
     
-    //Esse metodo decrementa um determinado numero(a) 
-    //durante uma quantidade(b) vezes
+    /**
+     * @param a espera um valor inteiro
+     * @param b espera um valor inteiro
+     * Esse Método decrementa uma determinado valor(a)
+     * em uma quantida(b) vezes
+     * @return int    
+     */
      public int FullDecrement(int a, int b){
     
         for(int i = 0; i < b; i++){
@@ -42,8 +53,11 @@ public class Calc {
     }
     
      
-    // Esse metodo calcula a permutação de um determinado valor(a)
-    // Ele espera um valor inteiro 
+    /**
+     * @param a espera um valor inteiro
+     * @return int    
+     * Esse Método retorna o valor(a) permutado
+     */
     public int Permutation(int a){
                     
         for(int i = a - 1; i > 1; i--){
@@ -55,6 +69,12 @@ public class Calc {
         return a;
     }
     
+    /**
+     * @param p espera um valor inteiro
+     * @param n espera um valor inteiro
+     * @return int    
+     * Esse Método retorna o valor da combinação onde
+     */
     public int Combination(int p, int n){
        
         int c1 = Permutation(n);        
@@ -64,7 +84,12 @@ public class Calc {
         return total;
     }
     
-    
+    /**
+     * @param p espera um valor inteiro
+     * @param n espera um valor inteiro
+     * @return int    
+     * Esse Método retorna o valor de um arranjo
+     */
     public int Arrangement(int p, int n){
     
         int a1 = Permutation(n);

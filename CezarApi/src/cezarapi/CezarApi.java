@@ -7,6 +7,7 @@ package cezarapi;
 import cezar.leigos.math.OddOrEven;
 import cezar.leigos.string.CharCount;
 import cezar.leigos.math.Calc;
+import cezar.leigos.object.Types;
 
 /**
  *
@@ -20,13 +21,11 @@ public class CezarApi {
     public static void main(String[] args) {
         
         
-        Calc c = new Calc();
+       Types t = new Types();
         
         
-       System.out.println(c.Permutation(10));
-       System.out.println(c.Combination(3, 10));
-       System.out.println(c.Combination(4, 7));
-       System.out.println(c.Arrangement(6, 12));
+       System.out.println(t.TypesEquals("a"));
+       
        
         
     }
