@@ -38,6 +38,84 @@ public class CharCount {
     }
     
     
+    /**
+     * @param s espera uma String
+     * @return boolean    
+     * Esse Método retorna true se todos os caracteres da String forem Maiúsculas
+     */
+    public boolean UpperCaseBoolean(String s){
+        boolean valor = false;
+        int conta = 0;
+        s = s.replaceAll(" ", "");
+        
+        for(int i = 0; i < s.length(); i++){
+            
+            for(char j = 'A'; j <= 'Z'; j++){
+                
+                if((s.toCharArray()[i] == j)){
+                    
+                    conta++;
+                    break;
+                    
+                }else{
+                    
+                    valor = false;                    
+                    
+                }
+                
+            }
+              
+        }
+        
+        if(s.length() == conta){
+        return true;    
+        } else{
+            
+        return false;
+        
+        }
+        
+    } 
+    
+    /**
+     * @param s espera uma String
+     * @return boolean    
+     * Esse Método retorna true se todos os caracteres da String forem Minúscula
+     */
+    public boolean LowerCaseBoolean(String s){
+    
+        boolean valor = false;
+        int conta = 0;
+        s = s.replaceAll(" ", "");
+        
+        for(int i = 0; i < s.length(); i++){
+            
+            for(char j = 'a'; j <= 'z'; j++){
+                
+                if((s.toCharArray()[i] == j)){
+                    
+                    conta++;
+                    break;
+                    
+                }else{
+                    
+                    valor = false;                    
+                    
+                }
+                
+            }
+              
+        }
+        
+        if(s.length() == conta){
+        return true;    
+        } else{
+            
+        return false;
+        
+        }
+       
+    }
     
     
     

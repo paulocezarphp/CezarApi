@@ -21,10 +21,11 @@ public class CezarApi {
     public static void main(String[] args) {
         
         
-       Types t = new Types();
+       CharCount c = new CharCount();
         
         
-       System.out.println(t.TypesEquals("a"));
+       System.out.println(c.UpperCaseBoolean("Paulo CezaR"));
+       System.out.println(c.LowerCaseBoolean("paulo"));
        
        
         
