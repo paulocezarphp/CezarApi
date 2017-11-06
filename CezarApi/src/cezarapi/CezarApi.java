@@ -4,10 +4,7 @@
  * and open the template in the editor.
  */
 package cezarapi;
-import cezar.leigos.math.OddOrEven;
-import cezar.leigos.string.CharCount;
-import cezar.leigos.math.Calc;
-import cezar.leigos.object.Types;
+import cezar.leigos.math.Percentage;
 
 /**
  *
@@ -21,13 +18,10 @@ public class CezarApi {
     public static void main(String[] args) {
         
         
-       CharCount c = new CharCount();
-        
-        
-       System.out.println(c.UpperCaseBoolean("Paulo CezaR"));
-       System.out.println(c.LowerCaseBoolean("paulo"));
-       
-       
+      Percentage p = new Percentage();
+      System.out.println(p.PercentageOf(15, 1000));
+      System.out.println(p.PercentageValue(401,400) + "%");
+      
         
     }
     
